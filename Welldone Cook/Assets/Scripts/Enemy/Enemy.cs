@@ -1,12 +1,12 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
     #region -Declare Variables-
+
+    //[SerializeField] private TextMeshProUGUI hpText;
 
     private GameController gm;
 

@@ -25,9 +25,12 @@ public class PlayerAction : MonoBehaviour
 
     public void Tackle()
     {
-        //gm.EnemyTakeDamage(20);
+        int tackleDmg = 20;
         Debug.Log("Enemy Get Damage");
-        TakeDamage(20);
+        if (gm.eCurrentHealth > 0)
+        {
+            TakeDamage(tackleDmg);
+        }
     }
 
     private void TakeDamage(int damage)
